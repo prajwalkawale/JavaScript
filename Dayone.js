@@ -41,3 +41,12 @@ switch(mode){
     default:
         console.log("You are on Default mode!!");
 }
+
+
+// Ternary operator 
+
+const age = 19;
+
+const Canvot = age>=18 ? "Yes, You can vote!" : "No, You can't vote!";
+
+console.log(Canvot);
