@@ -47,6 +47,6 @@ switch(mode){
 
 const age = 19;
 
-const Canvot = age>=18 ? "Yes, You can vote!" : "No, You can't vote!";
+const canVot = age>=18 ? "Yes, You can vote!" : "No, You can't vote!";
 
-console.log(Canvot);
+console.log(canVot);

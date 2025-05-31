@@ -22,3 +22,23 @@
       } 
 
       console.log(items);
+
+      console.log("\n");
+      console.log("\n");
+      console.log("\n");
+
+      /* Create an array to store companies ->"Bloomberg","Microsoft","Uber","Google","IBM","Netflix" 
+         a. Remove the first company from the array
+         b. Remove Uber&ADD Ola in its place
+         c. Add Amazon at the end
+      */
+
+         let famouseCompanies =["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+         famouseCompanies.shift();
+         console.log(famouseCompanies);
+
+         famouseCompanies.splice(1,1,"Ola");
+         console.log(famouseCompanies);
+
+         famouseCompanies.push("Amazon");
+         console.log(famouseCompanies);
