@@ -74,3 +74,4 @@ If only one parameter is passed to the splice method,
 it behaves like the slice method by extracting a specific portion from the given input value, 
 treating it as an index number.
 */
+
