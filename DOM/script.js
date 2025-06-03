@@ -39,3 +39,17 @@ console.log(attributesAccess.getAttribute("class"));
 
 console.log(attributesAccess.setAttribute("class","NewClass"));
 
+let div1 = document.querySelector("#div1")
+console.log(div1);
+console.log(div1.innerText="Hello Chrome!!");
+
+// create new element
+let newElement = document.createElement("button");
+newElement.innerText = "Click me";
+console.log(newElement);
+
+// Incert Element 
+
+let appendElement = document.querySelector("#div1");
+div1.append(newElement);
+console.log(appendElement);
