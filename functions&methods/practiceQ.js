@@ -1,6 +1,5 @@
+
 // create a function using the "Function" keyword that takes a String as an argument and returns the number of vowels in the string.
-
-
 let msg = "aaaa"; //prompt("Type any string:");
 function lengthOFstring(msg) {
 let sum = 0;
