@@ -50,3 +50,27 @@ const age = 19;
 const canVot = age>=18 ? "Yes, You can vote!" : "No, You can't vote!";
 
 console.log(canVot);
+
+
+console.log("\n");
+console.log("\n");
+console.log("\n");
+
+// testing operators
+
+let x = 10;
+let y = 5;
+
+console.log("The value of x is: ",x++); // it will first increment the value and then we will get the final value
+// now if we print the value of x, then we will get fincal incremented value.
+
+console.log("The incremented value: ",x);
+
+// Exponantial operator
+console.log(x**y); // 11*11*11*11*11
+
+// Number.parsInt
+
+let parseintVariable = "10";
+parseintVariable = Number.parseInt('parseintVariable');  // convert strig to number it is called as type casting
+console.log("type of the variable parseintVariable is: ",typeof parseintVariable);
