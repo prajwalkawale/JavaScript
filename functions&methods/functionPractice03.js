@@ -60,3 +60,9 @@ const num = (a,b,c,d,e) =>{
 };
 
 console.log(num(4,5,6,2,4));
+
+
+console.log('Hel\'lo');  // escape sequence character.
+
+let escape = 'Hel\'lo';
+console.log(escape.length);
