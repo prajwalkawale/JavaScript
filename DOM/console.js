@@ -32,3 +32,22 @@ console.log("Hello");
 j++;
 }
 console.timeEnd("whileLoop"); // end time
+
+
+let acc = document.body.childNodes;
+console.log(acc);
+// converting childNodes to an array
+
+let arr = Array.from(document.body.childNodes);
+console.log(arr);
+
+document.getElementsByTagName("nav")[0].firstElementChild.style.color="Red";
+
+
+// write a javascript code to change background of all <li> tags to green
+
+
+let arr2 = Array.from(document.getElementsByTagName("li"));
+arr2.forEach(elements=>{
+    elements.style.backgroundColor="green";
+})
