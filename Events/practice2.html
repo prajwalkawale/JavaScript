@@ -10,25 +10,42 @@
         #bulbOn{
             height: 200px;
             width: 200px;
-            display: flex;
+            display: none;
         }
 
          #bulbOff{
-            display: flex;
-            position:absolute;
             height: 200px;
             width: 200px;
-            top:25px;
+            left:20px;
         }
+
+        #toggleButton{
+            display:inline-block;
+            position:absolute;
+        }
+
+        .div-bg{
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            border: 1px solid black;
+            border-radius:50%;
+        }
+
     </style>
 </head>
 <body>
         <img id="bulbOn" src="./bulb_on.jpg" alt="Bulb on">
-        <img id="bulbOff" src="./bulb_off.jpg" alt="Bulb off">
-        <br>
-        <br>
-        <br>
-        <button id="btn">Bulb On and Off button</button>
+        <img id="bulbOff" src="./bulb_off.jpg" alt="Bulb off"">
+
+        <button id="toggleButton">Turn ON</button>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <div id="div" class="div-bg"></div> 
     <script src="practice2.js"></script>
 </body>
 
