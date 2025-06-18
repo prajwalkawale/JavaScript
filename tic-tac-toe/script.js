@@ -2,6 +2,7 @@ let box = document.querySelectorAll(".box");
 let reset = document.querySelector(".reset");
 let msg = document.querySelector(".msg");
 let container = document.querySelector(".msg-container");
+// winning paterns
 let winner = [
   [0, 1, 2],
   [0, 3, 6],
@@ -12,9 +13,9 @@ let winner = [
   [3, 4, 5],
   [6, 7, 8],
 ];
-
 let turn = true;
 
+// Accessing Each buttons
 box.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (turn) {
@@ -31,33 +32,7 @@ box.forEach((btn) => {
   });
 });
 
-
-let boxdiable = ()=>{
-    for(let boxes of box){
-        boxes.disabled= true;
-    }
-}
-
-const resetGame = ()=>{
-    turn = true;
-    container.classList.add("hide");
-    enabled();
-}
-
-let enabled =()=>{
-    for(let boxes of box){
-        boxes.disabled = false;
-        boxes.innerText="";
-    }
-}
-
-reset.addEventListener("click",resetGame());
-
-let showWinner = (winner)=>{
-    msg.innerText =`Congratulations! the Winner is ${winner}`
-    container.classList.remove("hide");
-    boxdiable();
-}
+// winning patterns
 
 let winningfunction=()=>{
     for(let patterns of winner){
@@ -74,4 +49,36 @@ let winningfunction=()=>{
     }
 }
 
+// Winning message display
+
+let showWinner = (winner)=>{
+    msg.innerText =`Congratulations! the Winner is ${winner}`
+    container.classList.remove("hide");
+    boxdiable();
+}
+
+// all boxes disabled after winning the game.
+
+let boxdiable = ()=>{
+    for(let boxes of box){
+        boxes.disabled= true;
+    }
+}
+
+// For resetting the game
+
+let enabled =()=>{
+    for(let boxes of box){
+        boxes.disabled = false;
+        boxes.innerText="";
+    }
+}
+
+const resetGame = ()=>{
+    turn = true;
+    container.classList.add("hide");
+    enabled();
+}
+
+// reset button
 reset.addEventListener("click",resetGame);
