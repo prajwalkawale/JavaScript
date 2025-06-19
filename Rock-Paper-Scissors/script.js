@@ -1,5 +1,5 @@
-let userwin = 0;
-let comwin = 0;
+let playerscore = 0;
+let systemscore= 0;
 
 let userchoice = document.querySelectorAll(".choice-images");
 let userscore = document.getElementById("userscore");
@@ -57,12 +57,15 @@ const draw = ()=>{
 // show winner
 
 const showWinner=(userwin,userChoice,computerChoice)=>{
-    userscore++;
     if(userwin){
+        playerscore++;
+        userscore.innerText=playerscore;
         msg.innerText=`You win! You have chosen ${userChoice} and the computer has chosen ${computerChoice}`
         msg.style.backgroundColor="green"
         
     }else{
+        systemscore++;
+        compscore.innerText=systemscore;
         msg.innerText=`You lose! You have chosen ${userChoice} and the computer has chosen ${computerChoice}`
         msg.style.backgroundColor="red";
     }
