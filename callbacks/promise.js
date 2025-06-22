@@ -27,3 +27,26 @@ p1.then((res)=>{
 p1.catch((err)=>{
 console.log("Error",err);
 })
+
+// callback hail 
+
+function getData(data,getDatanext){
+    setTimeout(() => {
+        console.log("Data No. ",data);
+        if(getDatanext){
+            getDatanext()
+        }
+    }, 3000);
+}
+
+
+getData(1,()=>{
+    console.log("Loading data<<")
+    getData(2,()=>{
+        console.log("Loading Next Data<<");
+        getData(3,()=>{
+           
+            console.log("Finished Data>>")
+        })
+    })
+})
