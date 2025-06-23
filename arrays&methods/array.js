@@ -38,3 +38,36 @@ for(let i in cities){
 
 console.log("\n");
 console.log("\n");
+
+
+// Spread out method in array ( It will work like the concat method)
+
+let spreadArray = ["thor","Ironman","Antman"];
+let spreadArray2 = ["Hulk","Batman"];
+
+let spreadArrayResult = [...spreadArray,...spreadArray2];
+console.log("Spread Array Method: ",spreadArrayResult);
+
+// flat method
+
+let flatArray = [1,2,3,4,[5,6,7,[8,9,10],11,12]];
+
+console.log("Flat method : ",flatArray.flat(Infinity));
+
+// for search purpose 
+
+console.log(Array.isArray("Developer"));
+
+// for creation of new array 
+
+let newArray = Array.from("Developer");
+console.log("New array: ",newArray);
+
+// creating new Array from set of elements
+
+let score = 100;
+let score2 = 95;
+let score3 = 44;
+let score4 = 66;
+
+console.log("New array of Score: ",Array.of(score,score2,score3,score4));
