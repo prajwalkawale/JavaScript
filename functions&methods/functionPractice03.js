@@ -66,3 +66,10 @@ console.log('Hel\'lo');  // escape sequence character.
 
 let escape = 'Hel\'lo';
 console.log(escape.length);
+console.log("\n");
+
+// Implicit arrow function 
+
+const addTwo = (num1,num2)=> num1 + num2;
+
+console.log(addTwo(5,5));

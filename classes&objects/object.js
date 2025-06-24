@@ -41,3 +41,14 @@ Object.freeze(person);
 person.name = "Jakson";
 
 console.log(person.name);
+
+
+// Object assign method
+
+const obj1 = {1:"A", 2:"B", 3:"C"};
+const obj2 = {4:"D", 5:"E", 6:"F"};
+
+console.log("\n");
+const obj3 = Object.assign({},obj1,obj2);
+
+console.log(obj3);
