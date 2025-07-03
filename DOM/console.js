@@ -51,3 +51,14 @@ let arr2 = Array.from(document.getElementsByTagName("li"));
 arr2.forEach(elements=>{
     elements.style.backgroundColor="green";
 })
+
+
+// create an element.
+
+const div = document.createElement('div');
+console.log(div);
+
+div.innerText = "Hello JavaScript";
+div.style.backgroundColor="orange";
+
+document.body.append(div);
