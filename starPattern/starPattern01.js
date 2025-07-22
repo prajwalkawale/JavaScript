@@ -11,15 +11,15 @@ console.log("\n");
 // Printing left half pyramid
 
 function leftHalfpyramid(n) {
-  for (let i = 1; i <= n; i++) {
-    let j, k;
+  for (let i = 1; i<= n; i++) {
     let space = "";
     let star = "";
-    for (j = 1; j <= n - i; j++) {
+
+    for (let j = 1; j <= n - i; j++) {
       space += " ";
     }
 
-    for (k = 1; k <= i; k++) {
+    for (let k = 1; k <= i; k++) {
       star += "*";
     }
     console.log(space + star);
